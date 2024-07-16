@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main Css -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>TO_DO_LIST</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1>To Do List</h1>
+      <div class="text parent">
+        <textarea class="task-input" name="" id=""></textarea>
+        <i class="fa-solid fa-arrow-right submit"></i>
+      </div>
+      <div class="container"></div>
+      <div class="options">
+        <div class="delete-all">
+          <button>Erase</button>
+        </div>
+        <div class="styles">
+          <li
+            class="op"
+            id="cl-linen"
+            style="background-color: #ffce94"
+            data-color="#fbeee0"
+          ></li>
+          <li
+            class="op"
+            id="cl-green"
+            style="background-color: green"
+            data-color="green"
+          ></li>
+          <li
+            class="op"
+            id="cl-blue"
+            style="background-color: blue"
+            data-color="blue"
+          ></li>
+          <li
+            class="op"
+            id="cl-Tropical"
+            style="background-color: rgb(253, 94, 120)"
+            data-color="tropical"
+          ></li>
+        </div>
+        <div class="complete-all">
+          <button>Done</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

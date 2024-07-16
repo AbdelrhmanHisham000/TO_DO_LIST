@@ -1,0 +1,156 @@
+:root {
+  --brown: #422800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #e1eec3, #f05053);
+}
+
+/* app structure */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbeee0;
+  width: 600px;
+  margin: 100px auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--brown);
+  margin-bottom: 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text textarea,
+input {
+  width: 400px;
+  border-radius: 20px;
+  border: none;
+  margin: 20px;
+  outline: none;
+  padding: 10px 15px;
+  resize: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.text input {
+  margin-left: 60px;
+}
+
+.text i {
+  color: white;
+  font-size: 1em;
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.child i:nth-child(2) {
+  background-color: #ff4c4c;
+}
+
+.child i:nth-child(3) {
+  background-color: #1abc9c;
+  padding: 10px;
+  margin-left: 10px;
+}
+/* app structure */
+
+/* start of options */
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -60px;
+}
+
+.options .styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options .styles li {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  list-style: none;
+}
+
+.options .styles li:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.op {
+  opacity: 0.3;
+}
+/* end of options */
+
+/* start of options buttons */
+
+.options .delete-all {
+  position: relative;
+  left: -65px;
+}
+
+.options .complete-all {
+  position: relative;
+  right: -60px;
+}
+
+.options button {
+  background-color: #fbeee0;
+  border: 2px solid var(--brown);
+  border-radius: 30px;
+  box-shadow: var(--brown) 4px 4px 0 0;
+  color: var(--brown);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.options button:hover {
+  background-color: #fff;
+}
+
+.options button:active {
+  box-shadow: var(--brown) 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .options button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+/* end of options buttons */
